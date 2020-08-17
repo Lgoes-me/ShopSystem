@@ -16,13 +16,12 @@ public class FlexibleGridLayout : LayoutGroup
 
     public FitType fitType;
 
+    public int rows;
+    public int columns;
+    public Vector2 cellSize;
     public Vector2 spacing;
     public bool fitX;
     public bool fitY;
-
-    private Vector2 cellSize;
-    private int rows;
-    private int columns;
 
     public override void CalculateLayoutInputHorizontal()
     {
