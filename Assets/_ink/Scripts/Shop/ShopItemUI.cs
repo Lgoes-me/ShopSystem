@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ink.Shop
 {
-    public class ShopItem : MonoBehaviour
+    public class ShopItemUI : MonoBehaviour
     {
         public Shop shop;
         public Item item;
