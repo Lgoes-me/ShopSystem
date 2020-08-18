@@ -28,7 +28,7 @@ namespace ink.Shop
 
             if (item.price != 0)
             {
-                Name.text = item.price.ToString("00"); ;
+                Value.text = item.price.ToString("00"); ;
             }
         }
 

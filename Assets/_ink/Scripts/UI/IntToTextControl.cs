@@ -3,12 +3,22 @@ using TMPro;
 using ScriptableObjectArchitecture;
 
 
-public class IntToTextControl : MonoBehaviour
+public class IntToTextControl : MonoBehaviour, IGameEventListener
 {
     public IntVariable intValue;
     public TMP_Text textElement;
 
+    public void Awake()
+    {
+        intValue.AddListener(this);
+    }
+
     public void OnEnable()
+    {
+        UpdateValue();
+    }
+
+    public void OnEventRaised()
     {
         UpdateValue();
     }
