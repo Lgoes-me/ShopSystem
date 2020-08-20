@@ -27,4 +27,9 @@ public class IntToTextControl : MonoBehaviour, IGameEventListener
     {
         textElement.text = intValue.Value.ToString("00");
     }
+
+    public void OnDestroy()
+    {
+        intValue.RemoveListener(this);
+    }
 }
